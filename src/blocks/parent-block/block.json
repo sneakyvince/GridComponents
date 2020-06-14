@@ -1,0 +1,9 @@
+{
+	"name": "esnext-example/parent-block",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}
