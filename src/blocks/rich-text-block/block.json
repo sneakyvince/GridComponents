@@ -1,0 +1,10 @@
+{
+	"name": "esnext-example/rich-text-block",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		}
+	}
+}

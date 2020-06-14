@@ -1,0 +1,22 @@
+{
+	"name": "esnext-example/custom-post-type-block",
+	"attributes": {
+		"customer": {
+			"type": "string"
+		},
+		"mediaId": {
+			"type": "number"
+		},
+		"mediaUrl": {
+			"type": "string"
+		},
+		"quote": {
+			"type": "string"
+		},
+		"testimonial_meta": {
+			"type": "object",
+			"source": "meta",
+			"meta": "testimonial_meta"
+		}
+	}
+}

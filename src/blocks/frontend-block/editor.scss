@@ -1,0 +1,11 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-esnext-example-frontend-block {
+	
+	.components-base-control__field {
+		margin-bottom:0!important;
+	}
+}
