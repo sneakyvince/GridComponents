@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  * Internal Dependencies
  */
 import { attributes, name } from './block.json';
-// import deprecated from './deprecated';
+import deprecated from './deprecated';
 import edit from './edit';
 import icon from './icon';
 import save from './save';
@@ -20,19 +20,17 @@ import './editor.scss';
 import './style.scss';
 
 const settings = {
-	title: __( 'Inner Block', 'esnext-example' ),
-	description: __(
-		'A starter inner block.',
-		'esnext-example'
-	),
-	keywords: [ 'inner block' ],
+	title: __( 'Parent Block', 'esnext-example' ),
+	description: __( 'Experimental INDICIA Block.', 'esnext-example' ),
+	keywords: [ 'blockhandbook', 'block handbook' ],
 	icon,
 	category: 'esnext-example',
-	example: {},
-	supports: {},
+	supports: {
+		lightBlockWrapper: true,
+	},
 	styles: [],
 	attributes,
-	// deprecated,
+	deprecated,
 	transforms,
 	edit,
 	save,
