@@ -2,12 +2,12 @@
 A simple wrapper component for adding a Foundation `.grid-container` class to an element.
 
 This component also registers the block wrapper so this component needs to be at the top of the DOM tree. 
-The following code also needs to be added to the block settings object:
+Please make sure the following code is present inside the block's `index.js`:
 
 ```jsx
 supports: {
-		lightBlockWrapper: true,
-	},
+	lightBlockWrapper: true,
+},
 ```
 
 The lightBlockWrapper option ensures the DOM tree in the editor mirrors that of the front-end.
@@ -35,6 +35,18 @@ function save()  {
 ```
 
 ## Usage with alignment toolbar
+To use the alignment toolbar, add the following attribute to `block.json`:
+
+```jsx
+"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		}
+}
+```
+
+Add a `userCanAlign={true}` attribute to the grid container:
 
 ```jsx
 import { GridContainer } from '../../components/grid';
